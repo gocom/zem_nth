@@ -23,6 +23,7 @@
 			'of'    => PHP_INT_MAX,
 			'id'    => null,
 			'start' => 0,
+			'reset' => 0,
 		)));
 
 		if ($id === null)
@@ -47,7 +48,7 @@
 			}
 		}
 
-		if (!isset($counter[$id]))
+		if (!isset($counter[$id]) || $reset)
 		{
 			$counter[$id] = (int) $start;
 		}
