@@ -1,6 +1,38 @@
 h1. zem_nth
 
-p. Step in a list
+p. Step in a list.
+
+h2. Basics
+
+bc. <txp:zem_nth step="1" of="3">
+	...every third...
+<txp:else />
+	...every other...
+</txp:zem_nth>
+
+h2. Tag attributes
+
+p. Attributes for @<txp:zem_nth />@ are as follows:
+
+p. *step*
+The step to jump.
+Example: @step="2"@ Default: @"2"@
+
+p. *of*
+Step of how many.
+Example: @off="4"@ Default: @undefined@
+
+p. *id*
+The identifier assigned to the counter. By default counters are identified by their contents. If you need multiple counters for identical code blocks, you can use the @id@ attribute to set your own identifier to prevent collisions. The @id@ attribute can also be used to connect two counters with different contents that wouldn't normally be connected.
+Example: @id="article_sidebar_stripes"@ Default: @undefined@
+
+p. *start*
+The value the counter starts from. This allows resuming a previous counter, or just to add padding.
+Example: @start="25"@ Default: @"0"@
+
+p. *reset*
+If set to @1@, resets the current counter back to the starting value.
+Example: @reset="1"@ Default: @"0"@
 
 h2. Changelog
 
