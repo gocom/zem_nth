@@ -1,5 +1,19 @@
 <?php
 
+/**
+ * Zem_nth plugin for Textpattern CMS.
+ *
+ * @author    Alex Shiels
+ * @author    Jukka Svahn
+ * @date      2012-
+ * @license   GNU GPLv2
+ * @link      https://github.com/gocom/zem_nth
+ *
+ * Copyright (C) 2013 Jukka Svahn http://rahforum.biz
+ * Licensed under GNU Genral Public License version 2
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
 	function zem_nth($atts, $thing) {
 		global $zem_nth_count;
 		$step = (empty($atts["step"]) ? 2 : $atts["step"]);
