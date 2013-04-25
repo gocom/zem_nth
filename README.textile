@@ -4,7 +4,7 @@ p. Step in a list
 
 h2. Changelog
 
-h3. Version 0.2 - upcoming
+h3. Version 1.0.0 - upcoming
 
 * Added: @id@ attribute. Allows avoiding collisions and starting new counters, where the contents and the attributes are the identical, but the counter should restart from zero. Can also be used to connect counters that wouldn't normally match.
 * Added: @start@ attribute. Allows changing the counter's starting value.
