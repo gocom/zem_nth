@@ -58,7 +58,7 @@
 
 		$counter[$id]++;
 		$out = parse(EvalElse($thing, in_array($counter[$id], $range[$id])));
-
 		$counter[$id] = $counter[$id] % $of;
+
 		return $out;
 	}
