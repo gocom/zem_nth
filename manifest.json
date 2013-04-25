@@ -3,8 +3,8 @@
     "description" : "Step in a list",
     "version"     : "1.0.0",
     "type"        : 0,
-    "author"      : "Jukka Svahn",
-    "author_uri"  : "http://rahforum.biz",
+    "author"      : "Alex Shiels, Jukka Svahn",
+    "author_uri"  : "https://github.com/gocom/zem_nth",
     "order"       : 5,
     "flags"       : 0,
     "help"        : {"file" : ["README.textile"]}
