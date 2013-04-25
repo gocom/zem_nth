@@ -16,7 +16,7 @@
 
 	function zem_nth($atts, $thing = '')
 	{
-		static $counter = array();
+		static $counter = array(), $range = array();
 
 		extract(lAtts(array(
 			'step'  => 2,
@@ -31,20 +31,23 @@
 			$id = md5($step . $thing . $of);
 		}
 
-		// Expands a list of "1, 2, 3-7, 8" into an array of integers.
-
-		$range = array();
-
-		foreach (do_list($step, ',') as $value)
+		if (!isset($range[$id]))
 		{
-			if (strpos($value, '-'))
+			$range[$id] = array();
+
+			// Expands a list of "1, 2, 3-7, 8" into an array of integers.
+
+			foreach (do_list($step, ',') as $value)
 			{
-				$value = do_list($value, '-');
-				$range = array_merge($range, range((int) $value[0], (int) $value[1]));
-			}
-			else
-			{
-				$range[] = (int) $value;
+				if (strpos($value, '-'))
+				{
+					$value = do_list($value, '-');
+					$range[$id] = array_merge($range[$id], range((int) $value[0], (int) $value[1]));
+				}
+				else
+				{
+					$range[$id] = (int) $value;
+				}
 			}
 		}
 
@@ -54,7 +57,7 @@
 		}
 
 		$counter[$id]++;
-		$out = parse(EvalElse($thing, in_array($counter[$id], $range)));
+		$out = parse(EvalElse($thing, in_array($counter[$id], $range[$id])));
 
 		$counter[$id] = $counter[$id] % $of;
 		return $out;
