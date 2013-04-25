@@ -1,0 +1,11 @@
+{
+    "name"        : "zem_nth",
+    "description" : "Step in a list",
+    "version"     : "1.0",
+    "type"        : 0,
+    "author"      : "Jukka Svahn",
+    "author_uri"  : "http://rahforum.biz",
+    "order"       : 5,
+    "flags"       : 0,
+    "help"        : {"file" : ["README.textile"]}
+}
