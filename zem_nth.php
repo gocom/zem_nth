@@ -19,9 +19,10 @@
 		static $counter = array();
 
 		extract(lAtts(array(
-			'step' => 2,
-			'of'   => PHP_INT_MAX,
-			'id'   => null,
+			'step'  => 2,
+			'of'    => PHP_INT_MAX,
+			'id'    => null,
+			'start' => 0,
 		)));
 
 		if ($id === null)
@@ -48,7 +49,7 @@
 
 		if (!isset($counter[$id]))
 		{
-			$counter[$id] = 0;
+			$counter[$id] = (int) $start;
 		}
 
 		$counter[$id]++;
