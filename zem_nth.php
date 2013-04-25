@@ -14,36 +14,46 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-	function zem_nth($atts, $thing) {
-		global $zem_nth_count;
-		$step = (empty($atts["step"]) ? 2 : $atts["step"]);
-		# aside: can you believe PHP has no INT_MAX equivalent?
-		$of = (empty($atts["of"]) ? 1000000 : $atts["of"]);
+	function zem_nth($atts, $thing = '')
+	{
+		static $counter = array();
 
-		# parse a list of the form "1, 2, 3-7, 8" into an array of integers
+		extract(lAtts(array(
+			'step' => 2,
+			'of'   => PHP_INT_MAX,
+			'id'   => null,
+		)));
+
+		if ($id === null)
+		{
+			$id = md5($step . $thing . $of);
+		}
+
+		// Expands a list of "1, 2, 3-7, 8" into an array of integers.
+
 		$range = array();
-		$r = explode(",", $step);
-		foreach ($r as $i) {
-			if (strpos($i, "-")) {
-				list($low, $high) = explode("-", $i, 2);
-				$range = array_merge($range, range($low, $high));
+
+		foreach (do_list($step, ',') as $value)
+		{
+			if (strpos($value, '-'))
+			{
+				$value = do_list($value, '-');
+				$range = array_merge($range, range((int) $value[0], (int) $value[1]));
 			}
-			else {
-				$range[] = (int)$i;
+			else
+			{
+				$range[] = (int) $value;
 			}
 		}
 
-		# Keep separate counters for each zem_nth tag
-		$id = md5($step. $thing . $of);
+		if (!isset($counter[$id]))
+		{
+			$counter[$id] = 0;
+		}
 
-		if (!isset($zem_nth_count[$id]))
-			$zem_nth_count[$id] = 0;
+		$counter[$id]++;
+		$out = parse(EvalElse($thing, in_array($counter[$id], $range)));
 
-		$result = NULL;
-		if (in_array($zem_nth_count[$id] + 1, $range))
-			$result = parse($thing);
-
-		$zem_nth_count[$id] = ($zem_nth_count[$id] +1) % $of;
-
-		return $result;
+		$counter[$id] = $counter[$id] % $of;
+		return $out;
 	}
