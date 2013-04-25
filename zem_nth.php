@@ -5,7 +5,7 @@
  *
  * @author    Alex Shiels
  * @author    Jukka Svahn
- * @date      2012-
+ * @date      2013-
  * @license   GNU GPLv2
  * @link      https://github.com/gocom/zem_nth
  *
