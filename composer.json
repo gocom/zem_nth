@@ -9,6 +9,11 @@
 			"name": "Jukka Svahn",
 			"homepage": "http://rahforum.biz",
 			"role": "Developer"
+		},
+		{
+			"name": "Alex Shiels",
+			"homepage": "http://forum.textpattern.com/profile.php?id=555",
+			"role": "Original developer"
 		}
 	],
 	"support": {
