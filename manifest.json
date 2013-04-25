@@ -1,7 +1,7 @@
 {
     "name"        : "zem_nth",
     "description" : "Step in a list",
-    "version"     : "1.0",
+    "version"     : "1.0.0",
     "type"        : 0,
     "author"      : "Jukka Svahn",
     "author_uri"  : "http://rahforum.biz",
