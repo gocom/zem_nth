@@ -4,6 +4,7 @@
 	"keywords": ["textpattern"],
 	"homepage": "https://github.com/gocom/zem_nth",
 	"license": "GPL-2.0",
+	"type": "textpattern-plugin",
 	"authors": [
 		{
 			"name": "Jukka Svahn",
