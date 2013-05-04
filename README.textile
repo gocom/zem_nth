@@ -10,6 +10,12 @@ bc. <txp:zem_nth step="1" of="3">
 	...every other...
 </txp:zem_nth>
 
+h2. Installing
+
+p. Using "Composer":http://getcomposer.org:
+
+bc. $ composer.phar require rah/zem_nth
+
 h2. Tag attributes
 
 p. Attributes for @<txp:zem_nth />@ are as follows:
