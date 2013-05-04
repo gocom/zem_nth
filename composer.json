@@ -22,5 +22,9 @@
 	},
 	"autoload": {
 		"files": []
+	},
+	"requires": {
+		"textpattern/lock": ">=4.0.7",
+		"textpattern/installer": "*@dev"
 	}
 }
