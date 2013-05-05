@@ -24,7 +24,7 @@
 	"autoload": {
 		"files": []
 	},
-	"requires": {
+	"require": {
 		"textpattern/lock": ">=4.0.7",
 		"textpattern/installer": "*"
 	}
