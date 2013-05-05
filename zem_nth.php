@@ -46,7 +46,7 @@
 				}
 				else
 				{
-					$range[$id] = (int) $value;
+					$range[$id][] = (int) $value;
 				}
 			}
 		}
