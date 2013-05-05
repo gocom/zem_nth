@@ -1,5 +1,7 @@
 h1. zem_nth
 
+p. "Packagist":https://packagist.org/packages/rah/zem_nth | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/zem_nth
+
 p. Step in a list. The zem_nth plugin adds a conditional tag to "Textpattern CMS":http://textpattern.com, which can be used to matches every nth item in a group of items based on the given step and group of. This tag works similarly to the ":nth-child":https://developer.mozilla.org/en-US/docs/CSS/:nth-child pseudo-selector found in CSS.
 
 h2. Installing
