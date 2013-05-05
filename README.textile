@@ -59,7 +59,7 @@ bc. <txp:article_custom>
 
 h2. Changelog
 
-h3. Version 0.2.0 - upcoming
+h3. Version 0.2.0 - 2013/05/05 - "Download":http://rahforum.biz/d/zem_nth_v0.2.0_zip.txt
 
 * Added: @<txp:else />@ support.
 * Added: @id@ attribute. Allows avoiding collisions and starting new counters, where the contents and the attributes are the identical, but the counter should restart from zero. Can also be used to connect counters that wouldn't normally match.
