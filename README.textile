@@ -1,14 +1,6 @@
 h1. zem_nth
 
-p. Step in a list.
-
-h2. Basics
-
-bc. <txp:zem_nth step="1" of="3">
-	...every third...
-<txp:else />
-	...every other...
-</txp:zem_nth>
+p. Step in a list. The zem_nth plugin adds a conditional tag to "Textpattern CMS":http://textpattern.com, which can be used to matches every nth item in a group of items based on the given step and group of. This tag works similarly to the ":nth-child":https://developer.mozilla.org/en-US/docs/CSS/:nth-child pseudo-selector found in CSS.
 
 h2. Installing
 
@@ -18,7 +10,13 @@ bc. $ composer.phar require rah/zem_nth
 
 h2. Tag attributes
 
-p. Attributes for @<txp:zem_nth />@ are as follows:
+bc. <txp:zem_nth step="1" of="3">
+	...every third...
+<txp:else />
+	...first and second...
+</txp:zem_nth>
+
+p. Attributes are as follows:
 
 p. *step*
 The step to jump.
@@ -39,6 +37,19 @@ Example: @start="25"@ Default: @"0"@
 p. *reset*
 If set to @1@, resets the current counter back to the starting value.
 Example: @reset="1"@ Default: @"0"@
+
+h2. Examples
+
+h3. Striped article list
+
+p. Adds even and odd classes to posts.
+
+bc. <txp:article_custom>
+    <div class="<txp:zem_nth step="1" of="2">odd<txp:else />even</txp:zem_nth>">
+        <h2><txp:title /></h2>
+        <txp:body />
+    </div>
+</txp:article_custom>
 
 h2. Changelog
 
