@@ -1,7 +1,7 @@
 {
     "name"        : "zem_nth",
     "description" : "Step in a list",
-    "version"     : "0.2.0",
+    "version"     : "0.2.2",
     "type"        : 0,
     "author"      : "Alex Shiels, Jukka Svahn",
     "author_uri"  : "https://github.com/gocom/zem_nth",

@@ -59,6 +59,10 @@ bc. <txp:article_custom>
 
 h2. Changelog
 
+h3. Version 0.2.2 - 2013/05/05 - "Download":http://rahforum.biz/d/zem_nth_v0.2.2_zip.txt
+
+* Fixed: Reported version number.
+
 h3. Version 0.2.1 - 2013/05/05 - "Download":http://rahforum.biz/d/zem_nth_v0.2.1_zip.txt
 
 * Fixed: Composer package requirements.
