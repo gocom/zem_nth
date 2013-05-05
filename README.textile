@@ -42,13 +42,13 @@ Example: @reset="1"@ Default: @"0"@
 
 h2. Changelog
 
-h3. Version 1.0.0 - upcoming
+h3. Version 0.2.0 - upcoming
 
 * Added: @<txp:else />@ support.
 * Added: @id@ attribute. Allows avoiding collisions and starting new counters, where the contents and the attributes are the identical, but the counter should restart from zero. Can also be used to connect counters that wouldn't normally match.
 * Added: @start@ attribute. Allows changing the counter's starting value.
 * Added: @reset@ attribute. Resets the counter back to zero.
 
-h3. Version 0.1  - 2004/08/26 - "Download":http://forum.textpattern.com/viewtopic.php?id=3495
+h3. Version 0.1.0  - 2004/08/26 - "Download":http://forum.textpattern.com/viewtopic.php?id=3495
 
 * Initial release.
