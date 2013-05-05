@@ -24,7 +24,7 @@
 			'id'    => null,
 			'start' => 0,
 			'reset' => 0,
-		)));
+		), $atts));
 
 		if ($id === null)
 		{
