@@ -38,6 +38,10 @@ p. *reset*
 If set to @1@, resets the current counter back to the starting value.
 Example: @reset="1"@ Default: @"0"@
 
+h2. Toolshed notice
+
+p. This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
+
 h2. Examples
 
 h3. Striped article list
