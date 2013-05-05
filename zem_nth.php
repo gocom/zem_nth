@@ -14,6 +14,14 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
+/**
+ * Matches every nth item.
+ *
+ * @param  array  $atts
+ * @param  string $thing
+ * @return string
+ */
+
 	function zem_nth($atts, $thing = '')
 	{
 		static $counter = array(), $range = array();
