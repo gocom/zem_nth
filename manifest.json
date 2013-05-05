@@ -7,5 +7,5 @@
     "author_uri"  : "https://github.com/gocom/zem_nth",
     "order"       : 5,
     "flags"       : 0,
-    "help"        : {"file" : ["README.textile"]}
+    "help"        : {"file" : ["./README.textile"]}
 }
