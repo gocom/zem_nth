@@ -59,21 +59,21 @@ bc. <txp:article_custom>
 
 h2. Changelog
 
-h3. Version 0.2.2 - 2013/05/05 - "Download":http://rahforum.biz/d/zem_nth_v0.2.2_zip.txt
+h3. Version 0.2.2 - 2013/05/05
 
 * Fixed: Reported version number.
 
-h3. Version 0.2.1 - 2013/05/05 - "Download":http://rahforum.biz/d/zem_nth_v0.2.1_zip.txt
+h3. Version 0.2.1 - 2013/05/05
 
 * Fixed: Composer package requirements.
 
-h3. Version 0.2.0 - 2013/05/05 - "Download":http://rahforum.biz/d/zem_nth_v0.2.0_zip.txt
+h3. Version 0.2.0 - 2013/05/05
 
 * Added: @<txp:else />@ support.
 * Added: @id@ attribute. Allows avoiding collisions and starting new counters, where the contents and the attributes are the identical, but the counter should restart from zero. Can also be used to connect counters that wouldn't normally match.
 * Added: @start@ attribute. Allows changing the counter's starting value.
 * Added: @reset@ attribute. Resets the counter back to zero.
 
-h3. Version 0.1.0  - 2004/08/26 - "Download":http://forum.textpattern.com/viewtopic.php?id=3495
+h3. Version 0.1.0  - 2004/08/26
 
 * Initial release.
