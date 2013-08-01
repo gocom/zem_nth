@@ -1,31 +1,31 @@
 {
-	"name": "rah/zem_nth",
-	"description": "Step in a list plugin for Textpattern",
-	"keywords": ["textpattern"],
-	"homepage": "https://github.com/gocom/zem_nth",
-	"license": "GPL-2.0",
-	"type": "textpattern-plugin",
-	"authors": [
-		{
-			"name": "Jukka Svahn",
-			"homepage": "http://rahforum.biz",
-			"role": "Developer"
-		},
-		{
-			"name": "Alex Shiels",
-			"homepage": "http://forum.textpattern.com/profile.php?id=555",
-			"role": "Original developer"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/gocom/zem_nth/issues",
-		"source": "https://github.com/gocom/zem_nth"
-	},
-	"autoload": {
-		"files": []
-	},
-	"require": {
-		"textpattern/lock": ">=4.0.7",
-		"textpattern/installer": "*"
-	}
+    "name": "rah/zem_nth",
+    "description": "Step in a list plugin for Textpattern",
+    "keywords": ["textpattern"],
+    "homepage": "https://github.com/gocom/zem_nth",
+    "license": "GPL-2.0",
+    "type": "textpattern-plugin",
+    "authors": [
+        {
+            "name": "Jukka Svahn",
+            "homepage": "http://rahforum.biz",
+            "role": "Developer"
+        },
+        {
+            "name": "Alex Shiels",
+            "homepage": "http://forum.textpattern.com/profile.php?id=555",
+            "role": "Original developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gocom/zem_nth/issues",
+        "source": "https://github.com/gocom/zem_nth"
+    },
+    "autoload": {
+        "files": []
+    },
+    "require": {
+        "textpattern/lock": ">=4.0.7",
+        "textpattern/installer": "*"
+    }
 }
