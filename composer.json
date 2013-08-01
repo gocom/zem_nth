@@ -21,9 +21,6 @@
         "issues": "https://github.com/gocom/zem_nth/issues",
         "source": "https://github.com/gocom/zem_nth"
     },
-    "autoload": {
-        "files": []
-    },
     "require": {
         "textpattern/lock": ">=4.0.7",
         "textpattern/installer": "*"
