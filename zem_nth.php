@@ -21,49 +21,49 @@
  * @return string User markup
  */
 
-	function zem_nth($atts, $thing = null)
-	{
-		static $counter = array(), $range = array();
+    function zem_nth($atts, $thing = null)
+    {
+        static $counter = array(), $range = array();
 
-		extract(lAtts(array(
-			'step'  => 2,
-			'of'    => PHP_INT_MAX,
-			'id'    => null,
-			'start' => 0,
-			'reset' => 0,
-		), $atts));
+        extract(lAtts(array(
+            'step'  => 2,
+            'of'    => PHP_INT_MAX,
+            'id'    => null,
+            'start' => 0,
+            'reset' => 0,
+        ), $atts));
 
-		if ($id === null)
-		{
-			$id = json_encode(array($step, $thing, $of));
-		}
+        if ($id === null)
+        {
+            $id = json_encode(array($step, $thing, $of));
+        }
 
-		if (!isset($range[$id]))
-		{
-			$range[$id] = array();
+        if (!isset($range[$id]))
+        {
+            $range[$id] = array();
 
-			// Expands a list of "1, 2, 3-7, 8" into an array of integers.
+            // Expands a list of "1, 2, 3-7, 8" into an array of integers.
 
-			foreach (do_list($step, ',') as $value)
-			{
-				if (strpos($value, '-'))
-				{
-					$value = do_list($value, '-');
-					$range[$id] = array_merge($range[$id], range((int) $value[0], (int) $value[1]));
-				}
-				else
-				{
-					$range[$id][] = (int) $value;
-				}
-			}
-		}
+            foreach (do_list($step, ',') as $value)
+            {
+                if (strpos($value, '-'))
+                {
+                    $value = do_list($value, '-');
+                    $range[$id] = array_merge($range[$id], range((int) $value[0], (int) $value[1]));
+                }
+                else
+                {
+                    $range[$id][] = (int) $value;
+                }
+            }
+        }
 
-		if (!isset($counter[$id]) || $reset)
-		{
-			$counter[$id] = (int) $start;
-		}
+        if (!isset($counter[$id]) || $reset)
+        {
+            $counter[$id] = (int) $start;
+        }
 
-		$counter[$id]++;
+        $counter[$id]++;
 
         if ($thing === null)
         {
@@ -74,7 +74,7 @@
             $out = parse(EvalElse($thing, in_array($counter[$id], $range[$id])));
         }
 
-		$counter[$id] = $counter[$id] % $of;
+        $counter[$id] = $counter[$id] % $of;
 
-		return $out;
-	}
+        return $out;
+    }
