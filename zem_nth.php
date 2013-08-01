@@ -16,9 +16,9 @@
 /**
  * Matches every nth item.
  *
- * @param  array  $atts
- * @param  string $thing
- * @return string
+ * @param  array  $atts  Attributes
+ * @param  string $thing Contained statement
+ * @return string User markup
  */
 
 	function zem_nth($atts, $thing = '')
