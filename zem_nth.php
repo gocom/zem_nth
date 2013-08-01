@@ -21,7 +21,7 @@
  * @return string User markup
  */
 
-	function zem_nth($atts, $thing = '')
+	function zem_nth($atts, $thing = null)
 	{
 		static $counter = array(), $range = array();
 
@@ -64,7 +64,16 @@
 		}
 
 		$counter[$id]++;
-		$out = parse(EvalElse($thing, in_array($counter[$id], $range[$id])));
+
+        if ($thing === null)
+        {
+            $out = $counter[$id];
+        }
+        else
+        {
+            $out = parse(EvalElse($thing, in_array($counter[$id], $range[$id])));
+        }
+
 		$counter[$id] = $counter[$id] % $of;
 
 		return $out;
