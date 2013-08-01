@@ -59,6 +59,12 @@ bc. <txp:article_custom>
 
 h2. Changelog
 
+h3. Version 0.3.0 - upcoming
+
+* Fixed: Prevent possible collisions within the step, contained statement and of when calculating identifier.
+* Added: If used as a self-closing tag, returns the current counter value.
+* Now requires PHP 5.2.0 or newer.
+
 h3. Version 0.2.2 - 2013/05/05
 
 * Fixed: Reported version number.
