@@ -18,6 +18,10 @@ bc. <txp:zem_nth step="1" of="3">
 	...first and second...
 </txp:zem_nth>
 
+p. The tag can also be used as a single, self-closing tag to return the current counter value:
+
+bc. <txp:zem_nth id="counter-identifier" />
+
 p. Attributes are as follows:
 
 p. *step*
@@ -37,7 +41,7 @@ The value the counter starts from. This allows resuming a previous counter, or j
 Example: @start="25"@ Default: @"0"@
 
 p. *reset*
-If set to @1@, resets the current counter back to the starting value.
+If set to @1@, resets the current counter back to the starting value set with @start@.
 Example: @reset="1"@ Default: @"0"@
 
 h2. Toolshed notice
@@ -55,6 +59,14 @@ bc. <txp:article_custom>
         <h2><txp:title /></h2>
         <txp:body />
     </div>
+</txp:article_custom>
+
+h3. Return current counter value
+
+p. Display article number.
+
+bc. <txp:article_custom>
+    <h2>#<txp:zem_nth id="article-number" />: <txp:title /></h2>
 </txp:article_custom>
 
 h2. Changelog
