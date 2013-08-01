@@ -36,7 +36,7 @@
 
 		if ($id === null)
 		{
-			$id = md5($step . $thing . $of);
+			$id = json_encode(array($step, $thing, $of));
 		}
 
 		if (!isset($range[$id]))
