@@ -1,14 +1,16 @@
 h1. zem_nth
 
-"Packagist":https://packagist.org/packages/rah/zem_nth | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/zem_nth
+"Download":https://github.com/gocom/zem_nth/releases | "Packagist":https://packagist.org/packages/rah/zem_nth | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/zem_nth
 
 Step in a list. The zem_nth plugin adds a conditional tag to "Textpattern CMS":http://textpattern.com, which can be used to matches every nth item in a group of items based on the given step and group of. This tag works similarly to the ":nth-child":https://developer.mozilla.org/en-US/docs/CSS/:nth-child pseudo-selector found in CSS.
 
 h2. Installing
 
-p. Using "Composer":http://getcomposer.org:
+Using "Composer":http://getcomposer.org:
 
 bc. $ composer require rah/zem_nth:*
+
+Or "downlaod":https://github.com/gocom/zem_nth/releases a plugin package.
 
 h2. Tag attributes
 
