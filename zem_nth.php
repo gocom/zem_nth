@@ -33,44 +33,34 @@ function zem_nth($atts, $thing = null)
         'reset' => 0,
     ), $atts));
 
-    if ($id === null)
-    {
+    if ($id === null) {
         $id = json_encode(array($step, $thing, $of));
     }
 
-    if (!isset($range[$id]))
-    {
+    if (!isset($range[$id])) {
         $range[$id] = array();
 
         // Expands a list of "1, 2, 3-7, 8" into an array of integers.
 
-        foreach (do_list($step, ',') as $value)
-        {
-            if (strpos($value, '-'))
-            {
+        foreach (do_list($step, ',') as $value) {
+            if (strpos($value, '-')) {
                 $value = do_list($value, '-');
                 $range[$id] = array_merge($range[$id], range((int) $value[0], (int) $value[1]));
-            }
-            else
-            {
+            } else {
                 $range[$id][] = (int) $value;
             }
         }
     }
 
-    if (!isset($counter[$id]) || $reset)
-    {
+    if (!isset($counter[$id]) || $reset) {
         $counter[$id] = (int) $start;
     }
 
     $counter[$id]++;
 
-    if ($thing === null)
-    {
+    if ($thing === null) {
         $out = $counter[$id];
-    }
-    else
-    {
+    } else {
         $out = parse(EvalElse($thing, in_array($counter[$id], $range[$id])));
     }
 
