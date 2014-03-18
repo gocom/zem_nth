@@ -1,14 +1,14 @@
 h1. zem_nth
 
-p. "Packagist":https://packagist.org/packages/rah/zem_nth | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/zem_nth
+"Packagist":https://packagist.org/packages/rah/zem_nth | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/zem_nth
 
-p. Step in a list. The zem_nth plugin adds a conditional tag to "Textpattern CMS":http://textpattern.com, which can be used to matches every nth item in a group of items based on the given step and group of. This tag works similarly to the ":nth-child":https://developer.mozilla.org/en-US/docs/CSS/:nth-child pseudo-selector found in CSS.
+Step in a list. The zem_nth plugin adds a conditional tag to "Textpattern CMS":http://textpattern.com, which can be used to matches every nth item in a group of items based on the given step and group of. This tag works similarly to the ":nth-child":https://developer.mozilla.org/en-US/docs/CSS/:nth-child pseudo-selector found in CSS.
 
 h2. Installing
 
 p. Using "Composer":http://getcomposer.org:
 
-bc. $ composer require rah/zem_nth
+bc. $ composer require rah/zem_nth:*
 
 h2. Tag attributes
 
@@ -18,41 +18,41 @@ bc. <txp:zem_nth step="1" of="3">
 	...first and second...
 </txp:zem_nth>
 
-p. The tag can also be used as a single, self-closing tag to return the current counter value:
+The tag can also be used as a single, self-closing tag to return the current counter value:
 
 bc. <txp:zem_nth id="counter-identifier" />
 
-p. Attributes are as follows:
+Attributes are as follows:
 
-p. *step*
+*step*
 The step to jump.
 Example: @step="2"@ Default: @"2"@
 
-p. *of*
+*of*
 Step of how many.
 Example: @off="4"@ Default: @undefined@
 
-p. *id*
+*id*
 The identifier assigned to the counter. By default counters are identified by their contents. If you need multiple counters for identical code blocks, you can use the @id@ attribute to set your own identifier to prevent collisions. The @id@ attribute can also be used to connect two counters with different contents that wouldn't normally be connected.
 Example: @id="article_sidebar_stripes"@ Default: @undefined@
 
-p. *start*
+*start*
 The value the counter starts from. This allows resuming a previous counter, or just to add padding.
 Example: @start="25"@ Default: @"0"@
 
-p. *reset*
+*reset*
 If set to @1@, resets the current counter back to the starting value set with @start@.
 Example: @reset="1"@ Default: @"0"@
 
 h2. Toolshed notice
 
-p. This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
+This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
 
 h2. Examples
 
 h3. Striped article list
 
-p. Adds even and odd classes to posts.
+Adds even and odd classes to posts.
 
 bc. <txp:article_custom>
     <div class="<txp:zem_nth step="1" of="2">odd<txp:else />even</txp:zem_nth>">
@@ -63,7 +63,7 @@ bc. <txp:article_custom>
 
 h3. Return current counter value
 
-p. Display article number.
+Display article number.
 
 bc. <txp:article_custom>
     <h2>#<txp:zem_nth id="article-number" />: <txp:title /></h2>
