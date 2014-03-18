@@ -71,7 +71,7 @@ bc. <txp:article_custom>
 
 h2. Changelog
 
-h3. Version 0.3.0 - upcoming
+h3. Version 0.3.0 - 2014/03/18
 
 * Fixed: Prevent possible collisions within the step, contained statement and of when calculating identifier.
 * Added: If used as a self-closing tag, returns the current counter value.
