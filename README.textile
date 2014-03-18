@@ -10,7 +10,7 @@ Using "Composer":http://getcomposer.org:
 
 bc. $ composer require rah/zem_nth:*
 
-Or "downlaod":https://github.com/gocom/zem_nth/releases a plugin package.
+Or "download":https://github.com/gocom/zem_nth/releases a plugin package.
 
 h2. Tag attributes
 
