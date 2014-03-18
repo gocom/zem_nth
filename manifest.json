@@ -1,11 +1,11 @@
 {
-    "name"        : "zem_nth",
-    "description" : "Step in a list",
-    "version"     : "0.2.2",
-    "type"        : 0,
-    "author"      : "Alex Shiels, Jukka Svahn",
-    "author_uri"  : "https://github.com/gocom/zem_nth",
-    "order"       : 5,
-    "flags"       : 0,
-    "help"        : {"file" : ["./README.textile"]}
+    "name": "zem_nth",
+    "description": "Step in a list",
+    "version": "0.2.2",
+    "type": 0,
+    "author": "Alex Shiels, Jukka Svahn",
+    "author_uri": "https://github.com/gocom/zem_nth",
+    "order": 5,
+    "flags": 0,
+    "help": {"file" : ["./README.textile"]}
 }
